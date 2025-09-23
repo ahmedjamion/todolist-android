@@ -1,15 +1,15 @@
 # ToDoList
 
-A simple Android To-Do app built with **Kotlin** to experiment with modern Android development
-patterns such as **Clean Architecture**, **MVVM**, **Hilt**, **Room**, and **Jetpack Compose**.
+A simple Android To-Do List app built with **Kotlin** to experiment with modern Android development
+patterns such as **MVVM**, **Hilt**, **Room**, and **Jetpack Compose**.
 This project was created as a learning and testing ground, but it is fully functional with basic
 CRUD features.
 
 ## Features
 
 - Add, update, and delete to-do items
-- Mark tasks as complete/incomplete
-- Simple UI built entirely with Jetpack Compose
+- Mark tasks as done/pending
+- Simple UI built with Jetpack Compose and Material3
 - Local persistence with Room database
 - Theme preference stored using DataStore
 
@@ -28,7 +28,7 @@ CRUD features.
 ## Tech Stack
 
 - **Language:** Kotlin
-- **UI:** Jetpack Compose
+- **UI:** Jetpack Compose, Material3
 - **Architecture:** MVVM + Clean Architecture
 - **Dependency Injection:** Hilt
 - **Persistence:** Room Database, DataStore Preferences
