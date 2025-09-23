@@ -51,7 +51,7 @@ CRUD features.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todolist.git
+   git clone https://github.com/ahmedjamion/todolist.git
    ```
 2. Open the project in Android Studio.
 3. Let Android Studio sync the project and download the necessary dependencies.
