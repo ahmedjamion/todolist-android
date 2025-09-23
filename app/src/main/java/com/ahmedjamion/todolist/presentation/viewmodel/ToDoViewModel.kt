@@ -27,9 +27,6 @@ class ToDoViewModel @Inject constructor(
     private val getToDosUseCase: GetToDosUseCase,
     private val updateToDoUseCase: UpdateToDoUseCase,
 ) : ViewModel() {
-//    private val _toDosState = MutableStateFlow<UiState<List<ToDo>>>(UiState.Loading)
-//    val toDosState: StateFlow<UiState<List<ToDo>>> = _toDosState
-
     private val _toDosState = MutableStateFlow(ToDoListScreenUiState(isLoading = true))
     val toDosState: StateFlow<ToDoListScreenUiState> = _toDosState
 
