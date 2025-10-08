@@ -89,10 +89,10 @@ class ToDoViewModel @Inject constructor(
         }
     }
 
-    fun toggleToDo(taskId: Int, isDone: Boolean) {
+    fun toggleToDo(toDo: ToDo) {
         viewModelScope.launch {
             try {
-                toggleToDoUseCase(taskId, isDone)
+                toggleToDoUseCase(toDo)
                 _events.emit(ToDoEvent.ShowToast("ToDo Toggled"))
             } catch (e: Exception) {
                 _events.emit(ToDoEvent.ShowToast("Error Toggling ToDo: ${e.message}"))

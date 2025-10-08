@@ -29,7 +29,7 @@ CRUD features.
 
 - **Language:** Kotlin
 - **UI:** Jetpack Compose, Material3
-- **Architecture:** MVVM + Clean Architecture
+- **Architecture:** MVVM + Clean Architecture (Maybe?)
 - **Dependency Injection:** Hilt
 - **Persistence:** Room Database, DataStore Preferences
 

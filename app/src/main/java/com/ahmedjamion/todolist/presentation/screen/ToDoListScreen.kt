@@ -122,7 +122,9 @@ fun ToDoListScreen(
                     Spacer(Modifier.height(16.dp))
                     ToDoList(
                         toDos = toDos,
-                        onToggleDone = { viewModel.toggleToDo(it.id, !it.isDone) },
+                        onToggleDone = { toDo ->
+                            viewModel.toggleToDo(toDo)
+                        },
                         onDelete = { toDo ->
                             toDoToDelete = toDo
                         },

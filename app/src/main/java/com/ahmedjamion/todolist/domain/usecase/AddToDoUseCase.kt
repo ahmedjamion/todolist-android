@@ -7,6 +7,12 @@ class AddToDoUseCase(
     private val toDoRepository: ToDoRepository
 ) {
 
-    suspend operator fun invoke(toDo: ToDo) =
+    suspend operator fun invoke(toDo: ToDo) {
+
+        if (!toDo.isValidTitle()) {
+            throw IllegalArgumentException("The title of the to-do can't be empty.")
+        }
         toDoRepository.addToDo(toDo)
+    }
+
 }

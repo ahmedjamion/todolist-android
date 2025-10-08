@@ -5,7 +5,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.FilterAlt
+import androidx.compose.material.icons.filled.Tune
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -35,7 +35,7 @@ fun DropDownFilter(
             ) {
                 Text(filter.toString())
                 Spacer(Modifier.width(4.dp))
-                Icon(imageVector = Icons.Filled.FilterAlt, contentDescription = "Delete")
+                Icon(imageVector = Icons.Filled.Tune, contentDescription = "Delete")
             }
         }
         DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
